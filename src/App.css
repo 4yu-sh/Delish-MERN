@@ -1,1 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Whisper&display=swap");
+
+.section-container {
+  @apply max-w-screen-2xl container mx-auto xl:px-24 px-4;
+}

@@ -1,9 +1,61 @@
 import React from "react";
 import nameLogo from "/Images/nameLogo.png";
+import { FaUserCircle } from "react-icons/fa";
+
 const Navbar = () => {
+  const navItems = (
+    <>
+      <li>
+        <details>
+          <summary>Vegetables</summary>
+          <ul>
+            <li>
+              <a>Season</a>
+            </li>
+            <li>
+              <a>Off-Season</a>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>Meat</summary>
+          <ul className="p-2">
+            <li>
+              <a>White</a>
+            </li>
+            <li>
+              <a>Red</a>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>Fruits</summary>
+          <ul className="p-2">
+            <li>
+              <a>Seasonal</a>
+            </li>
+            <li>
+              <a>Tropical</a>
+            </li>
+            <li>
+              <a>Exotic</a>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <a>Dairy</a>
+      </li>
+    </>
+  );
+
   return (
     <>
-      <header className="max-w-screen-2xl container mx-auto">
+      <header className="max-w-screen-2xl container mx-auto bg-yellow">
         <div className="navbar xl:px-6">
           <div className="navbar-start">
             <div className="dropdown">
@@ -31,26 +83,7 @@ const Navbar = () => {
                 tabIndex={0}
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <li>
-                  <a>Vegetables</a>
-                </li>
-                <li>
-                  <a>Meat</a>
-                  <ul className="p-2">
-                    <li>
-                      <a>Poultry</a>
-                    </li>
-                    <li>
-                      <a>Red Meat</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a>Fruits</a>
-                </li>
-                <li>
-                  <a>Dairy</a>
-                </li>
+                {navItems}
               </ul>
             </div>
             <a href="/">
@@ -58,30 +91,7 @@ const Navbar = () => {
             </a>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
-              <li>
-                <a>Vegetables</a>
-              </li>
-              <li>
-                <details>
-                  <summary>Meat</summary>
-                  <ul className="p-2">
-                    <li>
-                      <a>White</a>
-                    </li>
-                    <li>
-                      <a>Red</a>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-              <li>
-                <a>Fruits</a>
-              </li>
-              <li>
-                <a>Dairy</a>
-              </li>
-            </ul>
+            <ul className="menu menu-horizontal px-1">{navItems}</ul>
           </div>
           <div className="navbar-end">
             <div className="flex gap-2">
@@ -138,13 +148,10 @@ const Navbar = () => {
                 <div
                   tabIndex={0}
                   role="button"
-                  className="btn btn-ghost btn-circle avatar"
+                  className="p-1 btn-circle avatar"
                 >
                   <div className="w-10 rounded-full">
-                    <img
-                      alt="Tailwind CSS Navbar component"
-                      src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                    />
+                    <FaUserCircle className="text-4xl" />
                   </div>
                 </div>
                 <ul
