@@ -19,7 +19,7 @@ const Product = () => {
               <div className="font-currency font-bold">NRS 200</div>
             </div>
             <div className="card-actions justify-around">
-              <div className="badge badge-outline">Nuwakot</div>
+              <div className="badge badge-outline">Nuwakot {/*location-from-db*/} </div>
             </div>
           </div>
         </div>
