@@ -3,7 +3,7 @@ import React from "react";
 const Carousel = () => {
   return (
     <>
-      <div className="carousel carousel-center ">
+      <div className="carousel carousel-center py-1">
         <div className="carousel-item">
           <img
             src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"

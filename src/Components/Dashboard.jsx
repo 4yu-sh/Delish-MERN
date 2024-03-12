@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "./Product";
+import Productcard from "./Productcard";
 import FilterBar from "./FilterBar";
 
 const Dashboard = () => {
@@ -18,12 +18,15 @@ const Dashboard = () => {
 
           <div className="my-3 ">
             <div className="grid grid-cols-3 gap-10 mx-5">
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
+              <Productcard />
+              <Productcard />
+              <Productcard />
+              <Productcard />
+              <Productcard />
+              <Productcard />
+              <Productcard />
+              <Productcard />
+              <Productcard />
             </div>
           </div>
         </div>
