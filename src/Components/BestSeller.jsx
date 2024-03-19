@@ -2,7 +2,7 @@ import React from "react";
 import Productcard from "./Productcard";
 import FilterBar from "./FilterBar";
 
-const Dashboard = () => {
+const BestSeller = () => {
   return (
     <div className="section-container bg-gradient-to-r from-white from-0% to-bg to-100%">
       <div>
@@ -11,7 +11,7 @@ const Dashboard = () => {
           <FilterBar />
         </div>
         <div className="my-7">
-          <h1 className="font-primary text-4xl">Best Sellers</h1>
+          <h1 className="title">Best Sellers</h1>
           <div className="font-secondary">
             Picked from our most popular items
           </div>
@@ -35,4 +35,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default BestSeller;

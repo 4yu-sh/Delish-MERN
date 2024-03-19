@@ -3,7 +3,7 @@ import Video from "/Videos/DelishCinematic.mp4";
 const Videoplayer = () => {
   return (
     <>
-      <div class="video-two-container flex flex--mobile aie jcc">
+      <div className="lg:flex hidden">
         {/* <a
           href="/collections/mens-spring-summer-2024-collection"
           aria-label="Video https://cdn.shopify.com/videos/c/o/v/a95c3e7acccf4db3a9751675f8306ba8.mp4"

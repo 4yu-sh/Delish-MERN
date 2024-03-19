@@ -77,7 +77,7 @@ const Navbar = () => {
         <div
           className={`navbar xl:px-6 ${
             isSticky
-              ? "shadow-md bg-base-100 transition-all duration-500 ease-in-out bg-yellow"
+              ? "shadow-md transition-all duration-500 ease-in-out bg-yellow"
               : ""
           }`}
         >

@@ -1,12 +1,12 @@
 import React from "react";
-import Dashboard from "../../Components/Dashboard";
 import Carousel from "../../Components/Carousel";
+import BestSeller from "../../Components/BestSeller";
 
 const Home = () => {
   return (
     <div>
       <Carousel />
-      <Dashboard />
+      <BestSeller />
     </div>
   );
 };
